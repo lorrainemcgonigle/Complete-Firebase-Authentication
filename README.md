@@ -1,2 +1,2 @@
-# Complete-Firebase-Authentication
-This is a complete authentication mechanism using Firebase
+# Node-firebase-login-signup
+This code uses nodejs, a login screen and connects to firebase to sign up and sign in a user

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+
+      <link rel="shortcut icon" href="http://www.kelly3d.com/favicon.png" type="images/x-icon">
+      <title>Cozmet</title>
+      <link rel="stylesheet" href="css/style_index.css" type="text/css">
+  </head>
+<body>
+
+
+    <nav class="navbar navbar-inverse navbar-expand-lg navbar-light fixed-top">
+      <a href="index.html" class="navbar-brand">
+        <img id="logo_header" src="images/logo_header.png" alt="Cozmet">
+      </a>
+      <a>
+          <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+                  <img id="search_icon" src="images/search_icon.png" alt="search button">
+              </button>
+            </div>
+          </div>
+      </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon ml-auto"></span>
+    </button>
+      <div class="collapse navbar-collapse"  id="navbarMenu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ml-auto">
+              <a href="#"  class="nav-link">Members</a>
+            </li>
+            <li class="nav-item ml-auto">
+              <a href="#" class="nav-link">Products</a>
+            </li>
+        </ul>
+
+      </div>
+
+  </nav>
+
+  <div id="container">
+    <section id="starter">
+      <div id="inner-grid">
+          <div id="intro">
+            <img id="s1" src="images/index.png" alt="intro">
+        </div>
+        <div id=login_form>
+        <div class="login">
+          <div id="loginh">
+              <img id="logo_login" src="images/logo_login.png" alt="Cozmet">
+              </div id="input_login">
+              <img id="login_infographic" src="images/G.png" alt="Cozmet">
+              <input type="text" id="email" name="email" placeholder="Email" required/>
+              <br/>
+              <img id="login_infographic" src="images/M.png" alt="Cozmet"> 
+              <input  type="password" id="password" name="password" placeholder="Password" required/>
+              <br/>
+              <img id="login_infographic" src="images/Key.png" alt="Cozmet">
+              <input  type="text" id="displayName" name="displayName" placeholder="user name"/>
+              <br/>
+              <button class = "button" id="sign-in" name="signin">Login</button>
+              <button class = "button" id="sign-up" name="signup">Register</button>
+            </div>
+        </div>
+      </div>
+    <div id="frost"></div>
+    </section>
+      <section id="intro_gallery">
+    </section>
+    <section id="search">
+        <!-- aside will contain chat app -->
+        Search information goes here
+        <aside>
+        </aside>
+      <section id=Product_Images></section>
+      <section id=API>
+        <div class="wrapper">
+          <div class="box map"></div>
+          <div class="box info">Information</div>
+          <div class="box c">C</div>
+        </div>
+      </section>
+        <table>
+        </table>
+      </section>
+
+
+      <section id="footer">
+
+        <div id="outer-grid">
+
+          <div id="upper_footer"></div>
+          <div id="lower_footer">
+            <div id="footer_left">
+
+              <h4><strong>Subscriber to Newsletter</strong></h4> <br>
+              <input type="text" id="Newsletter">
+              <button type="submit" id="Newsletter_btn">GO
+                <i class="fa fa-search"></i>
+             </button>
+            </div>
+
+
+
+            <div id="footer_middle">
+
+              <h4><strong>Contact Us</strong></h4>
+              725 5th Ave, New York,<br>
+              NY 10022, USA,<br>
+              P: 999-333-9999 <br>
+              F: 333-666-1212 <br>
+
+            </div>
+            <div id="footer_right">
+              <h4><strong>Follow Us</strong></h4> <br>
+          <img id="corp_icons" src="images/corporate_icons/instragram.png" alt="Instragram">
+          <img id="corp_icons" src="images/corporate_icons/linkedin.png" alt="LinkedIn">
+          <img id="corp_icons" src="images/corporate_icons/facebook.png" alt="Facebook">
+          <img id="corp_icons" src="images/corporate_icons/pinterest.png" alt="Pinterest">
+          <img id="corp_icons" src="images/corporate_icons/google.png" alt="Google">
+
+
+
+            </div>
+          </div>
+
+          <div id="bottom_footer">
+            <div id="footer-grid">
+              <div>Terms of Use</div>
+              <div>|</div>
+              <div>Social Media Policy</div>
+              <div>|</div>
+              <div>Accessibility Statement</div>
+              <div>|</div>
+              <div>Privacy Policy</div>
+              <div>|</div>
+              <div>Sitemap</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      </div>
+
+</div>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+  var config = {
+apiKey: "AIzaSyDiUcBb8L5PHUCMs3NQTbK6tv-FzGQrUHs",
+authDomain: "cosmet-users.firebaseapp.com",
+databaseURL: "https://cosmet-users.firebaseio.com",
+projectId: "cosmet-users",
+storageBucket: "cosmet-users.appspot.com",
+messagingSenderId: "8164921910"
+};
+firebase.initializeApp(config);
+</script>
+<script type = "text/javascript" src = "script.js"></script>
+<script src="javaScript.js"> </script>
+</body>
+</html>
+
